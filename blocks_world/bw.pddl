@@ -4,11 +4,13 @@
 
 (define (domain bw)
   (:requirements :strips)
+  (:constants red green blue)
   (:predicates
-      (on ?x ?y)         ; object ?x is on ?object ?y
+      (color ?x ?c)   ; objecxt x has color ?c
+      (on ?x ?y)      ; object ?x is on ?object ?y
       (on-table ?x)   ; ?x is directly on the table
-      (clear ?x)         ; ?x has nothing on it
-      (arm-empty)   ; robot isn't holding anything
+      (clear ?x)      ; ?x has nothing on it
+      (arm-empty)     ; robot isn't holding anything
       (holding ?x))   ; robot is holding ?x
 
   ;; the four classic actions for manipulating objects

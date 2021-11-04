@@ -5,7 +5,7 @@
 ;;; Length: 8
 
 (define (problem bw-reversal4)
-  (:domain prodigy-bw)
+  (:domain bw)
   (:length (:parallel 8) (:serial 8))
   (:objects a b c d)
   (:init (arm-empty)
